@@ -1,0 +1,1 @@
+include ':app', ':androidmarketapi-0.6', ':protobuf-java-2.2.0'

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <View android:id="@+id/demoView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="System Scan"
+        android:id="@+id/sys"
+        android:clickable="true"
+        android:enabled="true"
+        android:longClickable="true"
+        android:onClick="sysCheckClicked"
+        android:background="#ff25b7ff"
+
+        android:layout_below="@+id/demoView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="58dp"
+        android:layout_toRightOf="@+id/demoView"
+        android:layout_toEndOf="@+id/demoView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vulnerability Scan"
+        android:id="@+id/dv"
+        android:clickable="true"
+        android:enabled="true"
+        android:height="@dimen/abc_alert_dialog_button_bar_height"
+        android:longClickable="true"
+        android:onClick="devVulCheckClicked"
+        android:background="#ff25b7ff"
+        android:layout_alignTop="@+id/sys"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/sys"
+        android:layout_toStartOf="@+id/sys" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Overall System Scan"
+        android:id="@+id/overall"
+        android:clickable="true"
+        android:enabled="true"
+        android:height="@dimen/abc_alert_dialog_button_bar_height"
+        android:longClickable="true"
+        android:onClick="overallScanClicked"
+        android:background="#ff25b7ff"
+        android:layout_alignBottom="@+id/demoView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
